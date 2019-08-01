@@ -1,9 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from 'react'
+import { App, Add } from './App'
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+describe('App Should Render', () => {
+  it('should render app', () => {
+    
+  })
+
+  it('shoudl return add', () => {
+    const a = Add(3,2);
+    expect(a).toBe(5)
+  })
+})
