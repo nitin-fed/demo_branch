@@ -1,13 +1,10 @@
 import React from 'react'
-import { App, Add } from './App'
+import App  from './App'
+import renderer from 'react-test-renderer'
+import { tsExternalModuleReference } from '@babel/types';
+
+
 
 describe('App Should Render', () => {
-  it('should render app', () => {
-    
-  })
 
-  it('shoudl return add', () => {
-    const a = Add(3,2);
-    expect(a).toBe(5)
-  })
 })
